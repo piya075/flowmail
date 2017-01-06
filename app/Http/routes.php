@@ -13,11 +13,11 @@
 
 // Authentication
 
-Route::get('/face','AuthController@Face');
-Route::get('/login/{provider?}','AuthController@Facebook');
-Route::get('/login/callback/{provider?}','AuthController@callbackFacebook');
-//Route::get('/login','AuthController@Login');
-//Route::get('/logout','AuthController@logout');
+//Route::get('/face','AuthController@Face');
+//Route::get('/login/{provider?}','AuthController@Facebook');
+//Route::get('/login/callback/{provider?}','AuthController@callbackFacebook');
+Route::get('/login','AuthController@Login');
+Route::get('/logout','AuthController@logout');
 Route::post('/authentication','AuthController@Authentication');
 //API Authentication
 Route::get('/up','AuthController@upload');
